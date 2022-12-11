@@ -51,7 +51,7 @@ init();
 const rollDice = () => {
     if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
-        diceEl.src = `dice-${dice}.png`;
+        diceEl.src = `images/dice-${dice}.png`;
         diceEl.classList.remove('hidden');
         if (dice !== 1) {
             currentScore += dice;
